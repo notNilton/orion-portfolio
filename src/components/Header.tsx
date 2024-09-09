@@ -4,6 +4,7 @@ import "../styles/Header.scss";
 const Header: React.FC = () => {
   return (
     <header className="header">
+      <h1>Nilton Santos</h1>
       <nav className="subject-selector">
         <ul>
           <li><a href="#projetos">Projetos</a></li>
@@ -17,3 +18,6 @@ const Header: React.FC = () => {
 };
 
 export default Header;
+
+
+
