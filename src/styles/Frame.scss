@@ -1,0 +1,13 @@
+@import './Variables.scss'; // Caso você tenha um arquivo de variáveis para as cores
+
+.frame {
+  width: 100vw;              /* Ocupa toda a largura da tela */
+  height: 100vh;             /* Ocupa toda a altura da tela */
+  background-color: $color-dark-gray;  /* Cor de fundo cinza escuro */
+  display: flex;             /* Usando Flexbox para alinhar o conteúdo interno */
+  align-items: center;       /* Alinhamento vertical do conteúdo */
+  justify-content: center;   /* Alinhamento horizontal do conteúdo */
+  padding: $padding-medium;  /* Adiciona padding médio */
+  box-sizing: border-box;    /* Garante que padding e bordas sejam considerados no tamanho */
+  
+}

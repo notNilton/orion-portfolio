@@ -1,0 +1,16 @@
+@import './Variables.scss'; // Caso você tenha um arquivo de variáveis para as cores
+
+.main-content {
+  flex-grow: 1;
+  margin: $margin-medium; /* Aplicando margem média */
+  padding: $padding-medium; /* Aplicando padding médio */
+  background-color: $color-light-gray; /* Usando a cor cinza claro */
+  color: $color-white; /* Cor do texto branca */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100% - #{$margin-large}); /* Altura calculada com margem */
+  box-sizing: border-box;
+  border: none;
+  box-shadow: 0 0 0 0.5px #fff; /* Simula uma borda fina com sombra */
+}
