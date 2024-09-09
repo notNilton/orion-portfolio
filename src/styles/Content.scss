@@ -1,9 +1,35 @@
-@import "./Variables.scss"; // Caso você tenha um arquivo de variáveis para as cores
+@import './Variables.scss';
 
 .content {
-  background-color: transparent; /* Variável de cor de fundo */
-  transition: background-color 0.5s ease, color 0.5s ease;
-  color: var(--text-color); /* Variável de cor do texto */
+  max-height: 75vh;
+  overflow-y: auto;   /* Barra de rolagem vertical */
+  padding: 20px;
   margin: 20px;
-  padding: 40px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 300px;      /* Defina uma largura fixa */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para um visual agradável */
+  background-color: var(--main-background-color);
+}
+
+.project-list {
+  background-color: var(--main-background-color);
+  list-style-type: none;  /* Remove os marcadores padrão da lista */
+  padding: 0;
+  margin: 0;
+}
+
+.project-item {
+  padding: 10px;
+  margin: 5px 0;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #e0e0e0;  /* Efeito de hover */
+  }
 }
