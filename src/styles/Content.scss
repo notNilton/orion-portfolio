@@ -1,7 +1,9 @@
+@import "./Variables.scss"; // Caso você tenha um arquivo de variáveis para as cores
+
 .content {
-    background-color: #f9f9f9;
-    margin: 20px;
-    padding: 40px;
-    color: #333;
-  }
-  
+  background-color: transparent; /* Variável de cor de fundo */
+  transition: background-color 0.5s ease, color 0.5s ease;
+  color: var(--text-color); /* Variável de cor do texto */
+  margin: 20px;
+  padding: 40px;
+}

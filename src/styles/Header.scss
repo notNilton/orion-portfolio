@@ -7,4 +7,27 @@
   margin: 20px;
   padding: 20px;
   text-align: left; 
+
+  .subject-selector {
+    ul {
+      list-style: none; /* Remover marcadores de lista */
+      padding: 0;
+      margin: 0;
+      display:list-item;
+      gap: 20px; /* Espaçamento entre os itens */
+
+      li {
+        margin-bottom: 5px;
+        a {
+          color: var(--text-color); /* Variável de cor do texto */
+          text-decoration: none; /* Remover o sublinhado dos links */
+          transition: color 0.3s ease; /* Adicionar uma transição suave para hover */
+
+          &:hover {
+            color: var(--primary-color); /* Alterar a cor no hover */
+          }
+        }
+      }
+    }
+  }
 }
