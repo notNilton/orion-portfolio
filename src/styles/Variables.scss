@@ -1,8 +1,21 @@
-// Cores
-$color-white: #ffffff;
-$color-black: #101010;
-$color-dark-gray: #111111;
-$color-light-gray: #3a3a3a;
+:root {
+    --background-color: #ffffff;
+    --main-background-color: #ffffff;
+    --text-color: #000000;
+
+    /* Adiciona transições suaves para cores e fundos */
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+[data-theme="dark"] {
+    --background-color: #101010;
+    --main-background-color: #3a3a3a;
+    --text-color: #ffffff;
+
+    /* Mantém a transição no tema escuro também */
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
 
 // Margens e Padding
 $margin-small: 10px;
@@ -11,7 +24,7 @@ $margin-large: 40px;
 
 $padding-small: 5px;
 $padding-medium: 10px;
-$padding-large: 20px;
+$padding-large: 40px;
 
 // Tipografia (Opcional)
 $font-size-small: 0.875rem;

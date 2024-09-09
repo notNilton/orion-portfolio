@@ -3,7 +3,6 @@
 .frame {
   width: 100vw;              
   height: 100vh;             
-  background-color: $color-dark-gray;
   display: grid;             
   grid-template-columns: auto 1fr auto; /* Define três colunas: auto, 1fr e auto */
   grid-template-rows: auto 1fr auto;    /* Define três linhas: auto, 1fr e auto */

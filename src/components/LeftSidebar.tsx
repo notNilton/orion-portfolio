@@ -5,7 +5,6 @@ import '../styles/LeftSidebar.scss';
 const LeftSidebar: React.FC = () => {
   return (
     <div className="left-sidebar">
-      
     </div>
   );
 };
