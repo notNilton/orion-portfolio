@@ -1,6 +1,6 @@
 // src/components/RightSidebar.tsx
 import React from 'react';
-// import '../styles/RightSidebar.scss'; // Importando o arquivo de estilo específico
+import '../styles/RightSidebar.scss';
 
 const RightSidebar: React.FC = () => {
   return (

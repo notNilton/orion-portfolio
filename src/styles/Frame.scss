@@ -18,32 +18,16 @@
 .left-sidebar {
   grid-column: 1;
   grid-row: 1 / 4;
-  text-align: center;
-  padding: 10px;
-  font-size: 1.5rem;
-  color: $color-white;
-  background-color: $color-dark-gray;
 }
 
 .main-content {
   grid-column: 2;     /* Segunda coluna */
   grid-row: 2;        /* Segunda linha */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: $color-dark-gray;
-  // padding: $padding-medium;
-  box-sizing: border-box;
 }
 
 .right-sidebar {
   grid-column: 3;     /* Terceira coluna */
   grid-row: 1 / 4;
-  text-align: center;
-  padding: 10px;
-  font-size: 1.5rem;
-  color: $color-white;
-  background-color: $color-dark-gray;
 }
 
 .footer {

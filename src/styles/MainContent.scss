@@ -2,14 +2,10 @@
 
 .main-content {
   flex-grow: 1;
-  // margin: $margin-medium; /* Aplicando margem média */
-  // padding: $padding-medium; /* Aplicando padding médio */
-  background-color: white; /* Usando a cor cinza claro */
-  color: $color-white; /* Cor do texto branca */
   display: flex;
   align-items: center;
   justify-content: center;
-  height:auto; /* Altura calculada com margem */
+  background-color: $color-light-gray;
   box-sizing: border-box;
   border: none;
   box-shadow: 0 0 0 0.5px #fff; /* Simula uma borda fina com sombra */

@@ -1,0 +1,10 @@
+@import './Variables.scss'; // Caso você tenha um arquivo de variáveis para as cores
+
+.right-sidebar {
+  text-align: center;
+  padding: 10px;
+  font-size: 1.5rem;
+  color: $color-white;
+  background-color: $color-dark-gray;
+}
+  
