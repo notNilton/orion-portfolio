@@ -11,18 +11,13 @@
 }
 
 .header {
-  grid-column: 1 / 4; /* Ocupa todas as colunas */
+  grid-column: 2; /* Ocupa todas as colunas */
   grid-row: 1;        /* Está na primeira linha */
-  text-align: center;
-  padding: 10px;
-  font-size: 1rem;
-  color: $color-white;
-  background-color: $color-dark-gray;
 }
 
 .left-sidebar {
-  grid-column: 1;     /* Primeira coluna */
-  grid-row: 2;        /* Segunda linha */
+  grid-column: 1;
+  grid-row: 1 / 4;
   text-align: center;
   padding: 10px;
   font-size: 1.5rem;
@@ -43,7 +38,7 @@
 
 .right-sidebar {
   grid-column: 3;     /* Terceira coluna */
-  grid-row: 2;        /* Segunda linha */
+  grid-row: 1 / 4;
   text-align: center;
   padding: 10px;
   font-size: 1.5rem;
@@ -52,8 +47,8 @@
 }
 
 .footer {
-  grid-column: 1 / 4; /* Ocupa todas as colunas */
-  grid-row: 3;        /* Está na última linha */
+  grid-column: 2;
+  grid-row: 3;
   text-align: center;
   padding: 10px;
   font-size: 1.5rem;

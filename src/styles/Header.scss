@@ -1,10 +1,9 @@
-// @import './Variables.scss'; // Caso você tenha um arquivo de variáveis para as cores
+@import './Variables.scss'; // Caso você tenha um arquivo de variáveis para as cores
 
-// .header {
-//     width: 100%; /* O header ocupa toda a largura do frame */
-//     text-align: center;
-//     padding: 10px;
-//     font-size: 1.5rem;
-//     color: $color-white; /* Usa a cor branca definida */
-//     background-color: $color-light-gray; /* Pode ajustar essa cor para algo diferente se necessário */
-//   }
+.header {
+    text-align: center;
+    padding: 10px;
+    font-size: 1rem;
+    color: $color-white;
+    background-color: $color-dark-gray;
+  }
