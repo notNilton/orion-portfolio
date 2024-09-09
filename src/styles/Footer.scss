@@ -3,7 +3,8 @@
 .footer {
   display: flex;
   justify-content: flex-end; /* Alinha o conteúdo à esquerda (ajustável) */
-  padding: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   background-color: var(--background-color); /* Variável de cor de fundo */
   color: var(--text-color); /* Variável de cor do texto */
   transition: background-color 0.5s ease, color 0.5s ease;
