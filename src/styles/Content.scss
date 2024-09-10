@@ -2,20 +2,25 @@
 
 .content {
   max-height: 75vh;
-  overflow-y: auto;   /* Barra de rolagem vertical */
+  overflow-y: auto; /* Barra de rolagem vertical */
   padding: 20px;
   margin: 20px;
   background-color: #f0f0f0;
   border: 1px solid #ccc;
-  border-radius: 8px;
-  width: 300px;      /* Defina uma largura fixa */
+  width: auto;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para um visual agradável */
   background-color: var(--main-background-color);
+
+  /* Adicionando textura ao fundo */
+  background-image: url('/path/to/your/texture.png'); /* Substitua pelo caminho da sua textura */
+  background-size: cover; /* Certifica-se de que a textura cobre todo o fundo */
+  background-repeat: repeat; /* Repete a textura */
+  background-blend-mode: multiply; /* Mistura a textura com a cor de fundo */
 }
 
 .project-list {
   background-color: var(--main-background-color);
-  list-style-type: none;  /* Remove os marcadores padrão da lista */
+  list-style-type: none; /* Remove os marcadores padrão da lista */
   padding: 0;
   margin: 0;
 }
@@ -30,6 +35,16 @@
   cursor: pointer;
 
   &:hover {
-    background-color: #e0e0e0;  /* Efeito de hover */
+    background-color: #e0e0e0; /* Efeito de hover */
   }
+}
+
+/* Tema escuro */
+[data-theme="dark"] .content {
+  background-color: var(--main-background-color);
+  /* Adicionando textura ao fundo no tema escuro */
+  background-image: url('/path/to/your/texture-dark.png'); /* Substitua pelo caminho da textura para o tema escuro */
+  background-size: cover;
+  background-repeat: repeat;
+  background-blend-mode: multiply;
 }
