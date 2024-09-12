@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/Content.scss"; // Importando os estilos customizados
 import defaultImage from "../assets/default-image.jpg"; // Importando a imagem padrão
 
@@ -15,11 +15,22 @@ const projects = [
 ];
 
 const Content: React.FC = () => {
+  const [expandedProject, setExpandedProject] = useState<number | null>(null);
+
+  const toggleProject = (id: number) => {
+    // Alterna entre expandir e recolher o item
+    setExpandedProject((prevId) => (prevId === id ? null : id));
+  };
+
   return (
     <div className="content">
       <ul className="project-list">
         {projects.map((project) => (
-          <li key={project.id} className="project-item">
+          <li
+            key={project.id}
+            className={`project-item ${expandedProject === project.id ? "expanded" : ""}`}
+            onClick={() => toggleProject(project.id)}
+          >
             <div className="project-card">
               <img src={project.imageUrl} alt={project.title} className="project-image" />
               <div className="project-details">

@@ -33,9 +33,15 @@
       background-color: #ffffff;
       border: 1px solid #ddd;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
       cursor: pointer;
       padding: 10px;
+      overflow: hidden;
+      height: 220px; /* Altura padrão */
+      transition: height 0.3s ease; /* Suave transição de altura */
+
+      &.expanded {
+        height: 65vh; /* Altura expandida */
+      }
 
       &:hover {
         transform: translateX(-10px);
