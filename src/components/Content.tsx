@@ -1,7 +1,5 @@
-import React from 'react';
-import { List, Card } from 'antd';
-// import 'antd/dist/antd.css'; // Import Ant Design styles
-import '../styles/Content.scss'; // Import your custom styles
+import React from "react";
+import "../styles/Content.scss"; // Importando os estilos customizados
 
 const projects = [
   { id: 1, title: "Project 1" },
@@ -29,17 +27,16 @@ const projects = [
 const Content: React.FC = () => {
   return (
     <div className="content">
-      <List
-        grid={{ gutter: 16, column: 4 }} // Display projects in a grid
-        dataSource={projects}
-        renderItem={project => (
-          <List.Item>
-            <Card title={project.title} bordered={false} className="project-card">
-              {`Details of ${project.title}`} {/* Customize as needed */}
-            </Card>
-          </List.Item>
-        )}
-      />
+      <ul className="project-list">
+        {projects.map((project) => (
+          <li key={project.id} className="project-item">
+            <div className="project-card">
+              <h3>{project.title}</h3>
+              <p>{`Details of ${project.title}`}</p>
+            </div>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 };

@@ -7,44 +7,49 @@
   margin: 20px;
   background-color: #f0f0f0;
   border: 1px solid #ccc;
-  width: auto;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para um visual agradável */
   background-color: var(--main-background-color);
+  display: flex;
+  justify-content: center;
 
-  /* Adicionando textura ao fundo */
-  background-image: url('/path/to/your/texture.png'); /* Substitua pelo caminho da sua textura */
-  background-size: cover; /* Certifica-se de que a textura cobre todo o fundo */
-  background-repeat: repeat; /* Repete a textura */
-  background-blend-mode: multiply; /* Mistura a textura com a cor de fundo */
-}
+  .project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Cria colunas flexíveis */
+    gap: 16px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 
-.project-list {
-  background-color: var(--main-background-color);
-  list-style-type: none; /* Remove os marcadores padrão da lista */
-  padding: 0;
-  margin: 0;
-}
+    .project-item {
+      background-color: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+      padding: 10px;
+    
+      &:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+      }
 
-.project-item {
-  padding: 10px;
-  margin: 5px 0;
-  background-color: #ffffff;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
-  cursor: pointer;
-
-  &:hover {
-    background-color: #e0e0e0; /* Efeito de hover */
+      .project-card {
+        padding: 20px;
+        text-align: center;
+      
+        h3 {
+          margin: 0;
+          font-size: 1.2rem;
+          color: #333;
+        }
+      
+        p {
+          margin-top: 10px;
+          font-size: 0.9rem;
+          color: #666;
+        }
+      }
+    }
   }
-}
-
-/* Tema escuro */
-[data-theme="dark"] .content {
-  background-color: var(--main-background-color);
-  /* Adicionando textura ao fundo no tema escuro */
-  background-image: url('/path/to/your/texture-dark.png'); /* Substitua pelo caminho da textura para o tema escuro */
-  background-size: cover;
-  background-repeat: repeat;
-  background-blend-mode: multiply;
 }
