@@ -6,18 +6,19 @@
   color: var(--text-color); /* Variável de cor do texto */
   margin: 20px;
   padding: 20px;
-  text-align: left; 
+  text-align: left;
 
   .subject-selector {
     ul {
       list-style: none; /* Remover marcadores de lista */
       padding: 0;
       margin: 0;
-      display:list-item;
+      display: list-item;
       gap: 20px; /* Espaçamento entre os itens */
 
       li {
         margin-bottom: 5px;
+
         a {
           color: var(--text-color); /* Variável de cor do texto */
           text-decoration: none; /* Remover o sublinhado dos links */
@@ -26,6 +27,11 @@
           &:hover {
             color: var(--primary-color); /* Alterar a cor no hover */
           }
+        }
+
+        &.active a {
+          font-weight: bold; /* Deixa o texto em negrito */
+          color: var(--primary-color); /* Opcionalmente, você pode mudar a cor do item ativo */
         }
       }
     }
