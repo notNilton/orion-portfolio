@@ -7,10 +7,10 @@ const Header: React.FC = () => {
       <h1>Nilton Santos</h1>
       <nav className="subject-selector">
         <ul>
-          <li><a href="#projetos">Projetos</a></li>
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#curriculum">Curriculum</a></li>
-          <li><a href="#inspirations">Inspirations</a></li>
+          <li><a href="projects">Projects</a></li>
+          <li><a href="curriculum">Curriculum</a></li>
+          <li><a href="inspirations">Inspirations</a></li>
+          <li><a href="sobre">About</a></li>
         </ul>
       </nav>
     </header>
