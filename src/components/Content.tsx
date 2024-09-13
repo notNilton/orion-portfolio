@@ -41,66 +41,7 @@ const projects = [
     ],
     repository: "https://github.com/user/project2",
     status: "Active",
-  },
-  {
-    id: 3,
-    title: "Project 3",
-    imageUrl: defaultImage,
-    duration: "7 months",
-    shortDescription: "An e-commerce platform for small businesses.",
-    longDescription:
-      "Project 3 is an e-commerce platform aimed at helping small businesses create and manage their online stores. It offers customizable templates, integrated payment gateways, and marketing tools for businesses to grow their digital presence.",
-    languages: ["Ruby", "JavaScript"],
-    frameworks: ["Ruby on Rails", "Vue.js"],
-    database: "MySQL",
-    features: [
-      "Customizable store templates",
-      "Integrated payment gateways (PayPal, Stripe)",
-      "SEO tools and marketing analytics",
-    ],
-    repository: "https://github.com/user/project3",
-    status: "Active",
-  },
-  ,
-  {
-    id: 4,
-    title: "Project 3",
-    imageUrl: defaultImage,
-    duration: "7 months",
-    shortDescription: "An e-commerce platform for small businesses.",
-    longDescription:
-      "Project 3 is an e-commerce platform aimed at helping small businesses create and manage their online stores. It offers customizable templates, integrated payment gateways, and marketing tools for businesses to grow their digital presence.",
-    languages: ["Ruby", "JavaScript"],
-    frameworks: ["Ruby on Rails", "Vue.js"],
-    database: "MySQL",
-    features: [
-      "Customizable store templates",
-      "Integrated payment gateways (PayPal, Stripe)",
-      "SEO tools and marketing analytics",
-    ],
-    repository: "https://github.com/user/project3",
-    status: "Active",
-  },
-  ,
-  {
-    id: 5,
-    title: "Project 3",
-    imageUrl: defaultImage,
-    duration: "7 months",
-    shortDescription: "An e-commerce platform for small businesses.",
-    longDescription:
-      "Project 3 is an e-commerce platform aimed at helping small businesses create and manage their online stores. It offers customizable templates, integrated payment gateways, and marketing tools for businesses to grow their digital presence.",
-    languages: ["Ruby", "JavaScript"],
-    frameworks: ["Ruby on Rails", "Vue.js"],
-    database: "MySQL",
-    features: [
-      "Customizable store templates",
-      "Integrated payment gateways (PayPal, Stripe)",
-      "SEO tools and marketing analytics",
-    ],
-    repository: "https://github.com/user/project3",
-    status: "Active",
-  },
+  }
 ];
 
 
