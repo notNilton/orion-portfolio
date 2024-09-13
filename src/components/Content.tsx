@@ -123,12 +123,16 @@ const Content: React.FC = () => {
                 className="project-image"
               />
               <div className="project-details">
+                {/* <div className="short-info"> */}
                 <h3>{project.title}</h3>
                 <p><strong>Duration:</strong> {project.duration}</p>
-                <p>{project.shortDescription}</p>
-
+                <p>{project.shortDescription}</p>  
+              {/* </div> */}
+                
                 {/* Mostra os detalhes completos se o projeto estiver expandido */}
-                {expandedProject === project.id && (
+                
+              </div>
+              {expandedProject === project.id && (
                   <div className="additional-info">
                     <p><strong>Description:</strong> {project.longDescription}</p>
                     <p><strong>Languages:</strong> {project.languages.join(", ")}</p>
@@ -147,7 +151,6 @@ const Content: React.FC = () => {
                     <p><strong>License:</strong> {project.license}</p>
                   </div>
                 )}
-              </div>
             </div>
           </li>
         ))}
