@@ -37,10 +37,19 @@
       padding: 10px;
       overflow: hidden;
       height: 220px; /* Altura padrão */
-      transition: height 0.3s ease; /* Suave transição de altura */
+      transition: height 1s ease; /* Suave transição de altura */
+      flex-grow: 1;
+
 
       &.expanded {
-        height: 65vh; /* Altura expandida */
+        height: 90vh;
+        // display: flex;
+        // grid-template-columns: 1fr 1fr;
+        // flex-grow: 1;
+
+
+        // height: 90vh; /* Altura expandida */
+        transition: height 1s ease; /* Suave transição de altura */
       }
 
       &:hover {
@@ -49,11 +58,12 @@
       }
 
       .project-card {
-        display: flex;
-        align-items: center;
-      
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+  
+
         .project-image {
-          width: 200px;
+          width: 400x;
           height: 200px;
           margin-right: 20px;
           object-fit: cover;
