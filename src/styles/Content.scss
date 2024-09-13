@@ -10,15 +10,11 @@
   display: flex;
   justify-content: center;
 
-  /* Suavizando a rolagem */
   scroll-behavior: smooth;
-
-  /* Escondendo o scrollbar */
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* Internet Explorer 10+ */
-
+  scrollbar-width: none;
+  -ms-overflow-style: none;
   &::-webkit-scrollbar {
-    display: none; /* Chrome, Safari, Opera */
+    display: none;
   }
 
   .project-list {
@@ -36,14 +32,15 @@
       cursor: pointer;
       padding: 10px;
       overflow: hidden;
-      height: 220px;
-      transition: height 1s ease;
+      height: auto;
+      min-height: 220px;
+      transition: min-height 1s ease;
       flex-grow: 1;
 
       &.expanded {
-        height: 65vh;
+        min-height: auto;
         color: black;
-        transition: height 1s ease;
+        transition: min-height 1s ease;
       }
 
       &:hover {
@@ -52,12 +49,12 @@
       }
 
       .project-card {
-        height: 100%;
         display: grid;
         grid-template-columns: 1fr 2fr;
+        align-items: start;
 
         .project-image {
-          width: 400x;
+          width: 400px;
           height: 200px;
           margin-right: 20px;
           object-fit: cover;
@@ -79,7 +76,7 @@
 
         .additional-info {
           grid-column: 1/3;
-          height: auto;
+          margin-top: 20px;
         }
       }
     }
