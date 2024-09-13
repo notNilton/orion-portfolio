@@ -41,10 +41,8 @@ const projects = [
     ],
     repository: "https://github.com/user/project2",
     status: "Active",
-  }
+  },
 ];
-
-
 
 const Content: React.FC = () => {
   const [expandedProject, setExpandedProject] = useState<number | null>(null);
@@ -60,7 +58,9 @@ const Content: React.FC = () => {
         {projects.map((project) => (
           <li
             key={project.id}
-            className={`project-item ${expandedProject === project.id ? "expanded" : ""}`}
+            className={`project-item ${
+              expandedProject === project.id ? "expanded" : ""
+            }`}
             onClick={() => toggleProject(project.id)}
           >
             <div className="project-card">
@@ -72,25 +72,51 @@ const Content: React.FC = () => {
               <div className="project-details">
                 {/* <div className="short-info"> */}
                 <h3>{project.title}</h3>
-                <p><strong>Duration:</strong> {project.duration}</p>
-                <p>{project.shortDescription}</p>  
-              {/* </div> */}
-                
+                <p>
+                  <strong>Duration:</strong> {project.duration}
+                </p>
+                <p>{project.shortDescription}</p>
+                <p>
+                  <strong>Adress:</strong> LINK{" "}
+                </p>
+
+                {/* </div> */}
+
                 {/* Mostra os detalhes completos se o projeto estiver expandido */}
-                
               </div>
               {expandedProject === project.id && (
-                  <div className="additional-info">
-                    <p><strong>Description:</strong> {project.longDescription}</p>
-                    <p><strong>Adress:</strong> LINK </p>
-                    <p><strong>Languages:</strong> {project.languages.join(", ")}</p>
-                    <p><strong>Frameworks:</strong> {project.frameworks.join(", ")}</p>
-                    <p><strong>Database:</strong> {project.database}</p>
-                    <p><strong>Features:</strong> {project.features.join(", ")}</p>
-                    <p><strong>Repository:</strong> <a href={project.repository} target="_blank" rel="noopener noreferrer">{project.repository}</a></p>
-                    <p><strong>Status:</strong> {project.status}</p>
-                  </div>
-                )}
+                <div className="additional-info">
+                  <p>
+                    <strong>Description:</strong> {project.longDescription}
+                  </p>
+                  <p>
+                    <strong>Repository:</strong>{" "}
+                    <a
+                      href={project.repository}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {project.repository}
+                    </a>
+                  </p>
+                  <p>
+                    <strong>Languages:</strong> {project.languages.join(", ")}
+                  </p>
+                  <p>
+                    <strong>Frameworks:</strong> {project.frameworks.join(", ")}
+                  </p>
+                  <p>
+                    <strong>Database:</strong> {project.database}
+                  </p>
+                  <p>
+                    <strong>Features:</strong> {project.features.join(", ")}
+                  </p>
+
+                  <p>
+                    <strong>Status:</strong> {project.status}
+                  </p>
+                </div>
+              )}
             </div>
           </li>
         ))}

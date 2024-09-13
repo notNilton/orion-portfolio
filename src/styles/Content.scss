@@ -44,8 +44,8 @@
       }
 
       &:hover {
-        transform: translateX(-10px);
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        transform: translateX(-20px);
+        transition: transform 0.5s ease;
       }
 
       .project-card {
@@ -75,7 +75,9 @@
         }
 
         .additional-info {
+          border-top: #333 1px solid;
           grid-column: 1/3;
+          padding: 20px;
           margin-top: 20px;
         }
       }
