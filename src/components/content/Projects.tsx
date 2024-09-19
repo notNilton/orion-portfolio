@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "../../styles/content/Projects.scss";
 
 // Dados de um único projeto
 const project = {
