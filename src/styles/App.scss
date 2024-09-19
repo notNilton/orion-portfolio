@@ -1,0 +1,81 @@
+/* Estilos gerais encapsulados para o layout da aplicação */
+
+.app-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  justify-content: space-between;
+
+  .content-container {
+    /* O conteúdo ocupa o espaço restante */
+    padding: 20px;
+    overflow-y: auto;
+    /* Permite rolagem se o conteúdo for maior que a tela */
+    background-color: #f4f4f4;
+    /* Cor de fundo do conteúdo */
+  }
+
+  /* Encapsulamento de estilos para o header */
+  header {
+    background-color: transparent;
+    color: #fff;
+    padding: 20px;
+
+    /* Encapsulando os estilos do selector */
+    .subject-selector {
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      li {
+        margin-bottom: 10px;
+      }
+
+      a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.2rem;
+        transition: font-weight 0.5s ease, margin-left 0.5s ease;
+
+        &:hover {
+          color: #ccc;
+        }
+
+        &.active {
+          font-weight: bold;
+          margin-left: 20px;
+
+        }
+      }
+    }
+  }
+}
+
+/* Estilos responsivos encapsulados */
+@media (max-width: 768px) {
+  .app-container {
+    header {
+      width: 30%;
+      /* Header ocupa mais espaço em telas menores */
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .app-container {
+    flex-direction: column;
+    /* Em telas muito pequenas, coloca o header em cima */
+
+    header {
+      width: 100%;
+      min-width: unset;
+    }
+
+    .content-container {
+      width: 100%;
+    }
+  }
+}
