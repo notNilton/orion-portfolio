@@ -9,6 +9,7 @@
 
   .content-container {
     /* O conteúdo ocupa o espaço restante */
+    max-width: 50%;
     padding: 20px;
     overflow-y: auto;
     /* Permite rolagem se o conteúdo for maior que a tela */
