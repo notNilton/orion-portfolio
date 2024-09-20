@@ -72,14 +72,19 @@ const Projects: React.FC = () => {
     <div>
       {projects.map((project) => (
         <div key={project.id} className="project-container">
-          <h3>{project.title}</h3>
-          <p>
-            <strong>Duration:</strong> {project.duration}
-          </p>
-          <p>{project.shortDescription}</p>
-          <button onClick={() => toggleProject(project.id)}>
-            {expandedProjectId === project.id ? "Hide Details" : "Show Details"}
-          </button>
+          <h3 className="title">{project.title}</h3>
+          <div className="short-description">
+            <p className="description">{project.shortDescription}</p>
+            <button
+              className="show-button"
+              onClick={() => toggleProject(project.id)}
+            >
+              {expandedProjectId === project.id
+                ? "Hide Details"
+                : "Show Details"}
+            </button>
+          </div>
+
           {expandedProjectId === project.id && (
             <div className="details">
               <p>
