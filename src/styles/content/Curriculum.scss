@@ -1,16 +1,57 @@
 .curriculum {
   display: flex;
   justify-content: center;
-  align-items: center;
-  padding: 20px;
+  align-items: flex-start;
+  // padding: 40px;
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f7f7f7;
   width: 100%;
-  // height: 100vh; // Ocupa toda a altura da tela
 
-  .pdf-viewer {
-    width: 80%; // Aumentando a largura do visualizador de PDF
-    // max-width: 1000px; // Limite de largura máxima
-    // height: 800px; // Definindo a altura do visualizador
-    border: 1px solid #ddd;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  .resume-content {
+    // width: 80%;
+    // max-width: 900px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      color: #007acc;
+    }
+
+    p {
+      margin-bottom: 10px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+
+      li {
+        margin-bottom: 15px;
+
+        strong {
+          font-size: 1.2rem;
+        }
+
+        p {
+          margin: 5px 0;
+        }
+
+        ul {
+          margin-left: 20px;
+          list-style-type: disc;
+        }
+      }
+    }
   }
 }
