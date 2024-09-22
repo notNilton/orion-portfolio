@@ -1,15 +1,38 @@
-  # Portfolio
+# Portfolio
 
-  Welcome to my personal portfolio, a space where design meets development. This project is not just a collection of work; it's a reflection of my journey, experiences, and the passion I have for creating thoughtful and engaging web experiences.
+Welcome to my personal portfolio, a space where **design meets development** and creativity meets functionality. This isn't just a collection of projects—it's a curated reflection of my growth as a developer and designer. Through every interaction, element, and animation, I aim to showcase not only my technical skills but also my passion for creating immersive and meaningful web experiences.
 
-  Built with **TypeScript** and **React**, this portfolio embodies simplicity, elegance, and functionality. Every line of code was written with care, and each element is designed to resonate with both developers and designers alike. It's more than just a technical showcase—it's an ongoing experiment in pushing the boundaries of web design while maintaining an intuitive and seamless user experience.
+### Technology Stack
 
-  ### Inspiration
+This portfolio is built using **TypeScript** and **React**, chosen for their robustness and scalability in building interactive web applications. From the architecture to the micro-interactions, everything is crafted to provide an experience that is both elegant and performant.
 
-  This portfolio draws significant inspiration from the minimalist principles of contemporary Japanese web design, where function drives form and elegance is found in simplicity. The work of **Keita Yamada** has been a key influence on this project.
+- **TypeScript** ensures the reliability and maintainability of the codebase, catching potential issues early in development.
+- **React** allows for dynamic, component-driven development, making the site modular and easy to expand as my skills evolve.
 
-  For me, web design goes beyond aesthetics—it's about creating an experience. This portfolio strikes a thoughtful balance between clarity and creativity, designed to engage curiosity while remaining true to its purpose. 
+### Design Philosophy
 
-  ### A Living Project
+Inspired by the **minimalist principles of contemporary Japanese web design**, particularly the work of **Keita Yamada**, this portfolio emphasizes clean aesthetics and functionality. Japanese design often finds beauty in simplicity, and I’ve embraced this philosophy, focusing on the following elements:
 
-  This portfolio is a living project, always growing and evolving. As I continue to learn, experiment, and create, this space will transform. It's more than a static display; it's an invitation to engage with my work and to share in the creative process.
+- **Whitespace** is used intentionally to guide the eye and provide breathing room for content.
+- **Typography** is clean and legible, creating a seamless reading experience.
+- **Subtle Animations** bring the design to life, enhancing the user experience without overwhelming the content.
+
+The goal is to create a **balanced, intuitive interface** where form follows function, and each design choice supports a cohesive user journey.
+
+### Key Features
+
+- **Responsive Design**: Every page is fully responsive, offering an optimized experience across all devices, from desktops to mobile phones.
+- **Dark Mode**: Users can switch between light and dark modes to suit their preferences and environmental lighting.
+- **Interactive Elements**: I’ve incorporated subtle interactive elements that react to user behavior, offering a more engaging experience.
+  
+### A Living Project
+
+This portfolio is a **living, evolving space**, just like my career. As I continue to learn new technologies and explore new design trends, this project will grow. Each update reflects my latest thinking and skills. It's a testament to my belief that web development is never static but always moving forward.
+
+You’ll find a mix of professional projects and personal experiments here—some more polished, others more experimental—but all serve as a stepping stone in my journey as a creator.
+
+### Looking Forward
+
+In the future, I plan to expand this portfolio with blog posts that document my learning experiences, share tutorials, and provide insight into the development process behind certain projects. I hope this portfolio not only serves as a showcase of my work but also as a resource for other developers and designers.
+
+Feel free to explore, interact, and get in touch if you’d like to collaborate or just talk about design and development.
