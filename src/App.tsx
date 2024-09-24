@@ -1,5 +1,10 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Navigate,
+} from "react-router-dom";
 
 import Header from "./components/header/Header";
 import Projects from "./components/content/Projects";
@@ -16,7 +21,8 @@ const App: React.FC = () => {
           <Routes>
             <Route path="/projects" element={<Projects />} />
             <Route path="/curriculum" element={<Curriculum />} />
-            <Route path="/" element={<Projects />} /> {/* Rota padrão */}
+            <Route path="*" element={<Navigate to="/projects" />} />{" "}
+            {/* Redireciona qualquer rota inválida para /projects */}
           </Routes>
         </div>
       </div>
