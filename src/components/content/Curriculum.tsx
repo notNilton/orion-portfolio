@@ -9,129 +9,134 @@ const Curriculum: React.FC = () => {
           <h2>Educação</h2>
           <ul>
             <li>
-              <strong>Bacharelado em Ciência da Computação</strong> -
-              Universidade Federal de São Paulo (2015 - 2019)
-              <p>
-                Principais disciplinas: Algoritmos, Estrutura de Dados, Sistemas
-                Operacionais, Inteligência Artificial.
-              </p>
-            </li>
-            <li>
-              <strong>Curso de Desenvolvimento Web Full Stack</strong> - Udemy
-              (2020)
-              <p>
-                Curso focado em desenvolvimento de aplicações web usando React,
-                Node.js, MongoDB e Express.
-              </p>
+              <strong>Bacharelado em Engenharia de Computação</strong> -
+              Universidade Federal de Mato Grosso (2020 - 2025)
             </li>
           </ul>
         </section>
 
         <section className="work-experience">
-          <h2>Experiência de Trabalho</h2>
+          <h2>Experiência Profissional</h2>
           <ul>
             <li>
-              <strong>Desenvolvedor Full Stack</strong> - Tech Innovators (2020
-              - Atual)
+              <strong>Desenvolvedor Junior Full Stack</strong> - PGE-MT (Maio
+              2024 - Atual)
               <p>
-                Desenvolvimento e manutenção de plataformas web utilizando
-                React, Node.js e PostgreSQL. Liderança de equipe em projetos de
-                inovação digital.
+                Implementei automações com Google Apps Script e AppSheet,
+                otimizando fluxos internos. Desenvolvi sistemas de gerenciamento
+                de processos jurídicos e controle de escalas para procuradores
+                usando TypeScript e React no front-end, PostgreSQL como banco de
+                dados, e deploy na Firebase com autenticação via Google
+                Authentication.
               </p>
               <ul>
-                <li>Implementação de APIs RESTful e GraphQL.</li>
                 <li>
-                  Integração de sistemas de pagamento e automação de processos.
+                  Integração do ChatGPT para resumos automáticos de processos e
+                  pré-avaliação de litispendência.
                 </li>
                 <li>
-                  Colaboração em projetos ágeis utilizando metodologias Scrum e
-                  Kanban.
+                  Tecnologias: TypeScript, React, PostgreSQL, Firebase, Node.js,
+                  Google Apps Script, AppSheet, ChatGPT API.
                 </li>
               </ul>
             </li>
             <li>
-              <strong>Estagiário em Desenvolvimento de Software</strong> -
-              SoftSolutions (2019 - 2020)
+              <strong>Estágio Desenvolvimento Back-end</strong> - SEMA-MT (Maio
+              2021 - Maio 2022)
               <p>
-                Suporte no desenvolvimento de aplicativos web, focado em
-                otimização de front-end e testes automatizados.
+                Desenvolvi uma ferramenta de campo utilizando C# e .NET para
+                coletar e gerenciar dados em ambientes remotos. Implementei a
+                sincronização de dados tanto online quanto offline, garantindo a
+                consistência dos dados.
               </p>
               <ul>
                 <li>
-                  Desenvolvimento de interfaces interativas com HTML, CSS e
-                  JavaScript.
+                  Integração com sistemas internos e externos por meio de APIs
+                  robustas.
                 </li>
-                <li>Testes unitários e de integração com Jest e Mocha.</li>
+                <li>Tecnologias: C#, .NET, SQL Server, APIs RESTful.</li>
               </ul>
             </li>
           </ul>
         </section>
 
         <section className="projects">
-          <h2>Projetos</h2>
+          <h2>Projetos Pessoais</h2>
           <ul>
             <li>
-              <strong>Plataforma de Gestão de Tarefas</strong> - Projeto Pessoal
-              (2021)
+              <strong>RADARE</strong> - Reconciliation and Data Analysis in a
+              Responsive Environment
               <p>
-                Desenvolvimento de uma aplicação web para gestão de tarefas
-                pessoais e profissionais, com autenticação de usuário,
-                integração com calendário e gráficos de produtividade.
+                Aplicativo web em React para reconciliação de dados industriais,
+                capaz de reconciliar grandes volumes de dados em tempo real ou
+                batches, ajustando variáveis para valores corretos.
               </p>
               <ul>
                 <li>
-                  Front-end em React e Redux para gerenciamento de estados.
-                </li>
-                <li>
-                  Back-end em Node.js e MongoDB para armazenamento de dados.
+                  Tecnologias: Python (Flask), TypeScript (React), PostgreSQL
+                  (TimescaleDB).
                 </li>
               </ul>
             </li>
             <li>
-              <strong>API de Previsão do Tempo</strong> - Projeto Open Source
-              (2022)
+              <strong>AAICAP</strong> - Artificial Intelligence Correction and
+              Augmentation Pipeline
               <p>
-                API RESTful que fornece dados meteorológicos em tempo real,
-                integrando com a OpenWeatherMap API.
+                Projeto para correção de imagens pixel-art geradas por
+                Inteligência Artificial, utilizando técnicas avançadas de
+                processamento de imagens para corrigir e otimizar a qualidade.
               </p>
               <ul>
-                <li>Desenvolvimento em Node.js com Express.</li>
-                <li>
-                  Integração com APIs de terceiros para obter dados
-                  meteorológicos.
-                </li>
+                <li>Tecnologias: Python, Flask, OpenCV, PIL.</li>
               </ul>
             </li>
           </ul>
-        </section>
-
-        <section className="courses">
-          <h2>Cursos e Certificações</h2>
+          <h2>Projetos Profissionais</h2>
           <ul>
             <li>
-              <strong>Certificação em Arquitetura de Software</strong> - Alura
-              (2022)
+              <strong>RADARE</strong> - Reconciliation and Data Analysis in a
+              Responsive Environment
               <p>
-                Curso avançado em padrões de arquitetura e design de software.
+                Aplicativo web em React para reconciliação de dados industriais,
+                capaz de reconciliar grandes volumes de dados em tempo real ou
+                batches, ajustando variáveis para valores corretos.
               </p>
+              <ul>
+                <li>
+                  Tecnologias: Python (Flask), TypeScript (React), PostgreSQL
+                  (TimescaleDB).
+                </li>
+              </ul>
             </li>
             <li>
-              <strong>Certificação AWS Cloud Practitioner</strong> - Amazon Web
-              Services (2021)
-              <p>Introdução aos conceitos e serviços principais da AWS.</p>
+              <strong>AAICAP</strong> - Artificial Intelligence Correction and
+              Augmentation Pipeline
+              <p>
+                Projeto para correção de imagens pixel-art geradas por
+                Inteligência Artificial, utilizando técnicas avançadas de
+                processamento de imagens para corrigir e otimizar a qualidade.
+              </p>
+              <ul>
+                <li>Tecnologias: Python, Flask, OpenCV, PIL.</li>
+              </ul>
             </li>
           </ul>
         </section>
 
         <section className="skills">
-          <h2>Habilidades</h2>
+          <h2>Habilidades Técnicas e Interesses</h2>
           <ul>
-            <li>JavaScript, TypeScript, Python</li>
-            <li>React, Redux, Node.js, Express</li>
-            <li>Banco de Dados: MongoDB, PostgreSQL</li>
-            <li>Metodologias Ágeis: Scrum, Kanban</li>
-            <li>Versionamento: Git, GitHub, GitLab</li>
-            <li>Cloud: AWS, Docker</li>
+            <li>
+              Idiomas: Português (nativo), Inglês (fluente), Espanhol (mediano),
+              Francês (iniciante), Alemão (iniciante)
+            </li>
+            <li>Linguagens: C/C++, Rust, Python, TypeScript</li>
+            <li>Bibliotecas: NumPy, Pandas, ReactJS, Redux</li>
+            <li>
+              Ferramentas: Node.js, Git, GitHub, Gitlab, AppScript, AppSheet
+            </li>
+            <li>Frameworks: ReactJS, Flask, Express.js, FastAPI</li>
+            <li>Bancos de Dados: Firebase, PostgreSQL, TimescaleDB</li>
           </ul>
         </section>
       </div>
