@@ -5,7 +5,7 @@ const Curriculum: React.FC = () => {
   return (
     <div className="curriculum">
       <div className="resume-content">
-        <section className="education">
+        <section className="education section-aligned">
           <h2>Educação</h2>
           <ul>
             <li>
@@ -15,7 +15,7 @@ const Curriculum: React.FC = () => {
           </ul>
         </section>
 
-        <section className="work-experience">
+        <section className="work-experience section-aligned">
           <h2>Experiência Profissional</h2>
           <ul>
             <li>
@@ -60,38 +60,8 @@ const Curriculum: React.FC = () => {
           </ul>
         </section>
 
-        <section className="projects">
+        <section className="projects section-aligned">
           <h2>Projetos Pessoais</h2>
-          <ul>
-            <li>
-              <strong>RADARE</strong> - Reconciliation and Data Analysis in a
-              Responsive Environment
-              <p>
-                Aplicativo web em React para reconciliação de dados industriais,
-                capaz de reconciliar grandes volumes de dados em tempo real ou
-                batches, ajustando variáveis para valores corretos.
-              </p>
-              <ul>
-                <li>
-                  Tecnologias: Python (Flask), TypeScript (React), PostgreSQL
-                  (TimescaleDB).
-                </li>
-              </ul>
-            </li>
-            <li>
-              <strong>AAICAP</strong> - Artificial Intelligence Correction and
-              Augmentation Pipeline
-              <p>
-                Projeto para correção de imagens pixel-art geradas por
-                Inteligência Artificial, utilizando técnicas avançadas de
-                processamento de imagens para corrigir e otimizar a qualidade.
-              </p>
-              <ul>
-                <li>Tecnologias: Python, Flask, OpenCV, PIL.</li>
-              </ul>
-            </li>
-          </ul>
-          <h2>Projetos Profissionais</h2>
           <ul>
             <li>
               <strong>RADARE</strong> - Reconciliation and Data Analysis in a
@@ -123,15 +93,14 @@ const Curriculum: React.FC = () => {
           </ul>
         </section>
 
-        <section className="skills">
-          <h2>Habilidades Técnicas e Interesses</h2>
+        <section className="skills section-aligned">
+          <h2>Habilidades Técnicas</h2>
           <ul>
             <li>
               Idiomas: Português (nativo), Inglês (fluente), Espanhol (mediano),
               Francês (iniciante), Alemão (iniciante)
             </li>
             <li>Linguagens: C/C++, Python, TypeScript</li>
-
             <li>Frameworks: ReactJS, Flask, Express.js, FastAPI</li>
             <li>Bancos de Dados: Firebase, PostgreSQL, TimescaleDB</li>
           </ul>

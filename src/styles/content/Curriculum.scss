@@ -10,40 +10,48 @@
     background-color: transparent;
     padding: 20px;
 
-    h1 {
-      font-size: 2rem;
-      margin-bottom: 10px;
-    }
+    .section-aligned {
+      display: flex;
+      align-items: center;
+      /* Centraliza verticalmente o h2 */
+      justify-content: space-between;
+      /* Garante que o espaço seja igual entre h2 e ul */
+      gap: 20px;
+      /* Espaço entre o h2 e o ul */
+      width: 100%;
 
-    h2 {
-      font-size: 1.5rem;
-      margin-top: 20px;
-      margin-bottom: 10px;
-      color: #007acc;
-    }
+      h2 {
+        color: aqua;
+        // flex-shrink: 0;
+        /* Impede o h2 de encolher */
+        // flex-grow: 1;
+        /* Garante que o h2 ocupe o mesmo espaço disponível */
+        text-align: right;
+        /* Alinha o h2 à direita */
+      }
 
-    p {
-      margin-bottom: 10px;
-    }
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        flex-grow: 1;
+        /* Faz com que o ul use o restante do espaço */
 
-    ul {
-      list-style-type: none;
-      padding: 0;
+        li {
+          margin-bottom: 15px;
 
-      li {
-        margin-bottom: 15px;
+          strong {
+            font-size: 1.2rem;
+          }
 
-        strong {
-          font-size: 1.2rem;
-        }
+          p {
+            margin: 5px 0;
+          }
 
-        p {
-          margin: 5px 0;
-        }
-
-        ul {
-          margin-left: 20px;
-          list-style-type: disc;
+          ul {
+            margin-left: 20px;
+            list-style-type: disc;
+          }
         }
       }
     }
