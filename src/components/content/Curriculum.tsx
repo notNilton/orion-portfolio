@@ -130,11 +130,8 @@ const Curriculum: React.FC = () => {
               Idiomas: Português (nativo), Inglês (fluente), Espanhol (mediano),
               Francês (iniciante), Alemão (iniciante)
             </li>
-            <li>Linguagens: C/C++, Rust, Python, TypeScript</li>
-            <li>Bibliotecas: NumPy, Pandas, ReactJS, Redux</li>
-            <li>
-              Ferramentas: Node.js, Git, GitHub, Gitlab, AppScript, AppSheet
-            </li>
+            <li>Linguagens: C/C++, Python, TypeScript</li>
+
             <li>Frameworks: ReactJS, Flask, Express.js, FastAPI</li>
             <li>Bancos de Dados: Firebase, PostgreSQL, TimescaleDB</li>
           </ul>
