@@ -1,8 +1,11 @@
 // Dados dos projetos
+
+
 export const projects = [
   {
     id: 1,
     title: "Project 1",
+    image:  "../../public/assets/image-test.png",
     duration: "3 months",
     shortDescription: "A web application to manage tasks.",
     longDescription:
@@ -21,6 +24,7 @@ export const projects = [
   {
     id: 2,
     title: "Project 2",
+    image:  "../../public/assets/image-test.png",
     duration: "6 months",
     shortDescription: "An e-commerce platform for small businesses.",
     longDescription:
@@ -35,65 +39,5 @@ export const projects = [
     ],
     repository: "https://github.com/user/project2",
     status: "In Progress",
-  },
-  {
-    id: 3,
-    title: "Project 3",
-    duration: "4 months",
-    shortDescription: "A mobile app for managing fitness routines.",
-    longDescription:
-      "A fitness tracking app that allows users to plan, log, and analyze their workouts. Includes progress charts and goal setting.",
-    languages: ["Kotlin", "Swift"],
-    frameworks: ["Android SDK", "iOS SDK"],
-    database: "Firebase",
-    features: ["Workout planning", "Progress tracking", "Goal setting"],
-    repository: "https://github.com/user/project3",
-    status: "Completed",
-  },
-  {
-    id: 4,
-    title: "Project 4",
-    duration: "5 months",
-    shortDescription: "A machine learning tool for financial forecasting.",
-    longDescription:
-      "A platform that leverages machine learning algorithms to predict financial trends and help businesses make data-driven decisions.",
-    languages: ["Python", "R"],
-    frameworks: ["TensorFlow", "scikit-learn"],
-    database: "MySQL",
-    features: [
-      "Time-series analysis",
-      "Predictive modeling",
-      "Automated reporting",
-    ],
-    repository: "https://github.com/user/project4",
-    status: "Active",
-  },
-  {
-    id: 5,
-    title: "Project 5",
-    duration: "2 months",
-    shortDescription: "A portfolio website for creative professionals.",
-    longDescription:
-      "A customizable portfolio website template aimed at designers, photographers, and other creatives looking to showcase their work.",
-    languages: ["JavaScript", "CSS"],
-    frameworks: ["Gatsby", "GraphQL"],
-    database: "None (static site)",
-    features: ["Responsive design", "Gallery support", "SEO optimization"],
-    repository: "https://github.com/user/project5",
-    status: "Completed",
-  },
-  {
-    id: 6,
-    title: "Project 6",
-    duration: "7 months",
-    shortDescription: "A multiplayer online game with real-time interactions.",
-    longDescription:
-      "An online multiplayer game where players can build, explore, and compete in real-time. The game includes chat and voice communication features.",
-    languages: ["C#", "JavaScript"],
-    frameworks: ["Unity", "Node.js"],
-    database: "MongoDB",
-    features: ["Real-time multiplayer", "In-game chat", "Voice communication"],
-    repository: "https://github.com/user/project6",
-    status: "In Development",
   },
 ];

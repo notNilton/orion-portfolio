@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 const Header: React.FC = () => {
   return (
-    <header className="header">
+    <div className="header">
       <h1>Nilton Santos</h1>
       <nav className="subject-selector">
         <ul>
@@ -41,7 +41,7 @@ const Header: React.FC = () => {
           </li>
         </ul>
       </nav>
-    </header>
+    </div>
   );
 };
 

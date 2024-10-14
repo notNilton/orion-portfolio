@@ -2,6 +2,7 @@
     display: flex;
     height: 100vh;
     width: 100vw;
+    padding: 20px;
     align-items: center;
     justify-content: space-between;
 
@@ -23,7 +24,7 @@
       display: none;
     }
 
-    header {
+    .header {
       background-color: transparent;
       color: #fff;
       padding: 20px;
@@ -55,29 +56,6 @@
 
           }
         }
-      }
-    }
-  }
-
-  @media (max-width: 768px) {
-    .app-container {
-      header {
-        width: 30%;
-      }
-    }
-  }
-
-  @media (max-width: 576px) {
-    .app-container {
-      flex-direction: column;
-
-      header {
-        width: 100%;
-        min-width: unset;
-      }
-
-      .content-container {
-        width: 300px;
       }
     }
   }
