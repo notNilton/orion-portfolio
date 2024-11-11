@@ -12,7 +12,18 @@ const Projects: React.FC = () => {
             alt={project.title}
             className="project-image"
           />
-          <h3 className="project-title">{project.title}</h3>
+          <div className="project-title">
+            <h3 className="name">{project.title}</h3>
+            <a
+              href={project.repository}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="link"
+            >
+              Link de Acesso
+            </a>
+          </div>
+
           <p className="project-description">{project.longDescription}</p>
 
           {/* Exibir Languages, Frameworks, Duration e Status */}

@@ -22,14 +22,26 @@
     font-size: 1.5rem;
     color: white;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Espaço entre o título e o link */
     margin-bottom: 10px;
-  }
 
+    .name{
+      margin: 0;
+    }
+
+    .link{
+      color: #d3d3d3;
+      text-decoration: underline;
+    }
+  }
+  
   .project-description {
     font-size: 1rem;
     color: #d3d3d3;
     text-align: center;
-    max-width: 800px;
     padding-bottom: 15px;
     border-bottom: #d3d3d3 1px solid;
   }
