@@ -1,11 +1,12 @@
-// Dados dos projetos
-
-
 export const projects = [
   {
     id: 1,
     title: "Project 1",
-    image:  "../../public/assets/image-test.png",
+    images: [
+      "/assets/image-test.png",
+      "/assets/image-test.png",
+      "/assets/image-test.png"
+    ],
     duration: "3 months",
     shortDescription: "A web application to manage tasks.",
     longDescription:
@@ -21,23 +22,5 @@ export const projects = [
     repository: "https://github.com/user/project1",
     status: "Active",
   },
-  {
-    id: 2,
-    title: "Project 2",
-    image:  "../../public/assets/image-test.png",
-    duration: "6 months",
-    shortDescription: "An e-commerce platform for small businesses.",
-    longDescription:
-      "This platform allows small businesses to create online stores, manage inventory, process payments, and handle customer orders with ease.",
-    languages: ["TypeScript", "Node.js"],
-    frameworks: ["Next.js", "Express"],
-    database: "MongoDB",
-    features: [
-      "Inventory management",
-      "Payment gateway integration",
-      "Order tracking",
-    ],
-    repository: "https://github.com/user/project2",
-    status: "In Progress",
-  },
+  // Outros projetos...
 ];
